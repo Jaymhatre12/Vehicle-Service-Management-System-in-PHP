@@ -1,0 +1,40 @@
+<!-- project url ->  apps url -> views  -->
+{% extends 'base.html' %}
+{% block tilte %}Car Rental{% endblock tilte %}
+{% block body %}
+ <!-- carousel -->
+ <div class="card bg-dark text-white">
+  <img src="https://www.barsnet.com/wp-content/uploads/2020/03/Nows-The-Time-For-The-Car-Rental-Industry-To-Prep-For-Recovery.jpg" class="card-img" height="586px" alt="...">
+  <div class="card-img-overlay">
+    <h1 class="card-title" style="color: rgb(44, 0, 0); margin-left: 60px;">"Buying a car is not a solution for your
+      ocasionally need"</h1>
+    <!-- <p class="card-text"> 
+          <form class="d-flex" style=" margin:0;
+          box-shadow: 30px;
+          padding: 24px 0;
+          width: 50%;
+          margin-top: 15%;margin-left: 25%;">
+          <input class="form-control me-2"  type="search" placeholder="Select your location" aria-label="Search">
+          <button class="btn btn-outline-success" style="background: #000;"> 
+            <a class="nav-link active" href="/carlist">search</a> </button>                                                               
+        </form></p> -->
+    <div class="dropdown" style="margin:0;
+        box-shadow: 30px;
+        padding: 24px 0;
+        width: 50%;
+        margin-top: 15%;margin-left: 38%;">
+      <button class="btn btn-secondary dropdown-toggle bg-dark " style="height: 60px; width: 350px; background-color: rgb(75, 71, 71); color: chartreuse;" type="button"
+        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        SELECT YOUR CITY
+      </button>
+      <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" style=" width: 350px; text-align: center;" href="\carlist">Mumbai</a></li>
+        <li><a class="dropdown-item" style=" width: 350px; text-align: center;" href="#">Banglore</a></li>
+        <li><a class="dropdown-item" style=" width: 350px; text-align: center;" href="#">Pune</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+{% endblock body %}
+
